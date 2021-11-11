@@ -18,12 +18,15 @@ const Tab1: React.FC = () => {
   const [requests, setRequests] = useState<ListItemRequest[]>([]);
   const [GTLF, setGLTF] = useState<GLTF>();
 
+  const [timesClicked, setTimesClicked] = useState<number>(0);
+
   async function loadFile() {
     const gltfLoader = new GLTFLoader();
+    setTimesClicked((index) => index + 1);
     console.log("--------------------");
-    console.log("START loading gltf");
+    console.log(timesClicked + " START loading gltf");
     gltfLoader.load(fileUrl, (gltf: GLTF) => {
-      console.log("DONE loading gltf");
+      console.log(timesClicked + " DONE loading gltf");
       setGLTF(gltf);
     });
 
