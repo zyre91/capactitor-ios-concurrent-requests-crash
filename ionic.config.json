@@ -1,0 +1,7 @@
+{
+  "name": "test-ios-crash",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

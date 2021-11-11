@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter.peterfriend",
+  "appName": "test-ios-crash",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}
