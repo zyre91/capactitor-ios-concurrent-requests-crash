@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, MutableRefObject } from "react";
+import React, { useRef, useEffect } from "react";
 import { PerspectiveCamera, Scene, WebGLRenderer } from "three";
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 

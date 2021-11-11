@@ -29,18 +29,8 @@ const Tab1: React.FC = () => {
 
     const fetchFile = window.fetch(fileUrl);
     const timestamp = new Date().getTime();
-    // setTimeout(() => {
-    //   let requestsCopy = [...requests];
-    //   requestsCopy = requestsCopy.filter(
-    //     (request) => request.timestamp !== timestamp
-    //   );
-    //   setRequests(requestsCopy);
-    // }, 5000);
-    setRequests([...requests, { timestamp, promise: fetchFile }]);
-  }
 
-  function newestFirst(requestA: ListItemRequest, requestB: ListItemRequest) {
-    return requestB.timestamp - requestA.timestamp;
+    setRequests([...requests, { timestamp, promise: fetchFile }]);
   }
 
   return (

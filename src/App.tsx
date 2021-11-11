@@ -42,7 +42,7 @@ const App: React.FC = () => (
             <Tab1 />
           </Route>
           <Route exact path="/tab2">
-            <Tab1 />
+            <Tab2 />
           </Route>
           <Route path="/tab3">
             <Tab1 />
